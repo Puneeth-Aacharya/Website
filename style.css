@@ -1,0 +1,618 @@
+@media only screen and (max-width: 768px)
+{
+	.navbar{
+	background-image: url(./animation_1.jpg);
+	background-size: cover;
+}
+#fal.fal{
+	font-size: 200%;
+}
+	#main{
+	background:url(./animation.jpg) no-repeat;
+	background-size:cover;
+	
+}
+#main h3{
+	font-size:300%;
+	font-weight:200%;
+	color:white;
+}
+#main h5{
+	font-size: 120%;
+	color:yellow;
+	text-transform: uppercase;
+	line-height: 1.2;
+	border-bottom: 2px solid rgb(233,200,209);
+	width:70%;
+	
+}
+#about {
+	background:url(./mount.jpg) no-repeat;
+	background-size: cover;
+
+}
+#about_image img{
+	width: auto;
+	height: auto;
+	box-shadow:6px 4px 30px blue;
+}
+#about h1{
+	padding-left: 2%;
+	font-size:300%;
+	font-family: forte;
+	color:white;
+	border-bottom: 5px solid yellow;
+	border-radius: 20px;
+	text-shadow: 0 0 8px black;
+}
+#about p{
+	font-size:130%;
+	color:white;
+}
+#about td{
+	padding:2%;
+}
+#about .fa{
+	font-size:1%;
+	color:white;
+	padding-right:0.5%;
+}
+#education.education{
+	background-color:rgb(109,215,201);
+
+}
+#education_img{
+	width:90%;
+	box-shadow:6px 4px 25px blue;
+}
+#edu.card{
+	background-color:rgb(109,215,201);
+	margin:10px;	
+	border-radius:2%;	
+	border-width: 1%;
+}
+#edu_head{
+	padding-top: 5%;
+	font-size: 200%;
+}
+.project{
+	background-color:black;
+	border-bottom: 10px solid blue;
+}
+#grid.grid-container{
+	width:100%;
+	display: block;
+	grid-template-columns: 1fr 1fr;
+/*	grid-gap:auto; */
+	
+}
+#title.card-title
+{
+	font-size: 120%;
+}
+
+#android.card,#dbms.card{
+	width:95%;
+	background-color: wheat;
+	font-size: 100%;
+	box-shadow:2px 2px 20px purple;
+	padding-right: 1%;
+}
+#hms.card,#sgpa.card{
+	width:95%;
+	background-color:rgb(220, 124, 236);
+	font-size: 100%;
+	box-shadow:2px 2px 10px purple;
+}
+#comments{
+	border:3px solid yellow;
+	background-color:black;
+	border-radius:20px;
+	border-width:5px;
+	padding-left:5%;
+}
+
+#inputtext.input{
+	width: 90%;
+	background-color:black;
+	border-color:blue;
+	border-width:2pt;
+	border-radius:10px;
+	box-shadow:1px 1px 15px blue;
+	transition:all 0.3s ease-in;
+/*	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;*/
+}
+
+.fa-paper-plane{
+	font-size:auto;
+	text-shadow:0px 10px 15px #0088cc;
+}
+
+#send.btn{	
+	width: 50%;
+	color:black;
+	text-align: center;
+	font-size:130%;
+	font-weight:bold;
+	background-color:rgb(109,215,201);
+	border-radius:8px;
+	border-color: black;
+	border-width:2px;
+}
+#send:hover{
+	background-color:purple;
+	transition: 1.0s	
+}
+#email.email{
+	font-size:150%;
+	font-family: consolas;
+	color:rgb(65,10,114);	
+}
+#author.author{
+	text-align: center;
+	font-size: 100%;
+	color:white;
+	text-shadow: 0 5px 5px blue;
+}
+}
+
+
+
+/*****************************************/
+body{
+	background-color: black;
+}
+/*.{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}*/
+/**********/
+header{
+		height: 80px;
+		background-color: black;
+		padding: 10px 5px;
+	}
+	.menu-wrap{
+		display: flex;
+		justify-content: space-between;
+		padding: 0 15px;
+	}
+	.fa-user-graduate{
+		height: 50px;
+		font-size: 2.4em;
+		color: white;
+	}
+	.menu-icon{
+		font-size: 2.4em;
+		color: white;
+		line-height: 50px;
+	}
+
+	nav{
+		position: absolute;
+		background-color: black;
+		top: 70px;
+		left:0;
+		width: 100%;
+	}
+
+	nav ul{
+		list-style-type: none; 
+	}
+	nav ul li{
+		padding: 0 15px;
+	}
+	nav ul li a{
+		color: yellow;
+
+		font-size: 100%;
+		display: inline-block;
+		padding: 0.3%;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	nav ul{
+		max-height: 0;
+		overflow: hidden;
+		transition: width 2s,height 4s;
+	}
+	nav ul li a:hover,nav ul li a:focus{
+		text-shadow: 1px 1px 5px blue;
+		font-size: 120%;
+	}
+	#checkbox{
+		display: none;
+	}
+	#checkbox:checked ~ nav ul{
+		max-height: 140px;
+		padding: 15px 0;
+		transition: all 0.5s;
+	}
+/**********/
+.fa-user-graduate{
+	color: white;
+	font-size: 50px;
+	text-shadow: 0 0 20px blue;
+}
+.signature{
+	font-family:  Edwardian Script ITC;
+	color:blue;font-size: 25px;
+	padding-left: 50px;
+}
+/* main class*/
+
+.main{
+	background:url(./animation.jpg) no-repeat;
+	background-size:cover;
+	width:auto;
+	height: auto;
+}
+.main h3{
+	font-size:4.4rem;
+	font-weight:700;
+	color:blue;
+}
+
+
+
+
+.main h5{
+	font-size: 1.5rem;
+	color:yellow;
+	text-transform: uppercase;
+	line-height: 1.5;
+	border-bottom: 3px solid rgb(233,200,209);
+	width:auto;
+	
+}
+.main h6{
+	font-size:1rem;
+	color:white;
+}
+
+.about {
+	background:url(./mount.jpg);
+
+}
+.about #about_image{
+	padding-right: 40px;
+
+}
+
+.about img{
+	width: auto;
+	height: auto;
+	box-shadow:6px 4px 30px pink;
+}
+.about h1{
+	padding-left: 5px;
+	font-size:3rem;
+	font-family: forte;
+	color:white;
+	border-bottom: 5px solid yellow;
+	border-radius: 20px;
+	text-shadow: 0 0 8px blue;
+}
+.about p{
+	font-size:150%;
+	color:white;
+
+}
+.about td{
+	padding:10px;
+}
+.about .fa{
+	font-size:10px;
+	color:white;
+	padding-right:10px;
+}
+
+.about #technical_skil{
+	font-size: 160%;
+	font-family:harrington;
+	font-weight:bold;
+	color:#1cc125;
+}
+.skill{
+	padding:8px;
+}
+
+.c{
+	color:yellow;
+	font-weight:bold;
+	background-color:black;
+	width:140%;
+	border:2px solid black;
+	border-radius:30px;
+	box-shadow: 0 0 20px orange;
+}
+.java{
+	color:yellow;
+	font-weight:bold;
+	background-color:black;
+	width:140%;
+	border:2px solid black;
+	border-radius:30px;
+	box-shadow: 0 0 20px orange;
+}
+.python{
+	color:yellow;
+	font-weight:bold;
+	background-color:black;
+	width:140%;
+	border:2px solid black;
+	border-radius:30px;
+	box-shadow: 0 0 20px orange;
+}
+.html{
+	color:yellow;
+	font-weight:bold;
+	background-color:black;
+	width:140%;
+	border:2px solid black;
+	border-radius:30px;
+	box-shadow: 0 0 20px orange;
+}
+.css{
+	color:yellow;
+	font-weight:bold;
+	background-color:black;
+	width:140%;
+	border:2px solid black;
+	border-radius:30px;
+	box-shadow: 0 0 20px orange;
+}
+.sql{
+	color:yellow;
+	font-weight:bold;
+	background-color:black;
+	width:200%;
+	border:2px solid black;
+	border-radius:30px;
+	box-shadow: 0 0 20px orange;
+}
+
+.btn1{
+	padding:1%;
+	font-size:125%;
+	color:blue;
+	height:40px;
+	width:100%;
+	border:3px solid black;
+	background-color:rgb(223,219,218);	
+	border-radius:10px;	
+	font-weight:bold;
+}
+
+.btn1:hover{
+	background-color:white;
+	text-shadow:0 0 10px blue;
+	color:black;	
+	transition:0.5s;
+}
+.about .fa-eye{
+	color:black;
+	font-size: 20px;
+	text-shadow: 0 0 10px yellow;
+}
+.about .fa-external-link{
+	font-size: 16px;
+	color: black;
+}
+
+
+.education{
+	background-color:rgb(109,215,201);
+
+}
+.education img{
+
+	box-shadow:6px 4px 25px blue;
+}
+
+#edu{
+	background-color:rgb(109,215,201);
+	margin:10px;	
+	border-radius:10px;	
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: auto;
+  padding: 10px;
+}
+
+.subheading {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.project{
+	background-color:black;
+	border-bottom: 10px solid blue;
+	border-bottom-right-radius:  5%;
+	border-bottom-left-radius:  5%;
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+/*	grid-gap:auto; */
+	
+}
+.card{
+	margin-bottom:10px;
+	margin-left:10px;
+	border-radius:15px;
+	border:1px solid black;
+	box-shadow:5px 5px 15px #e74c;
+	transition:all 0.3s ease-in;
+}
+#dbms,#hms{
+	background-color:wheat;
+	width:90%;
+	padding:10px;
+	color:black;
+	font-size: 20px;
+	font-weight: bold;
+	box-shadow:2px 2px 25px purple;
+	transition:all 0.3s ease-in;
+
+}
+#sgpa,#android{
+	background-color:rgb(220, 124, 236);
+	width:90%;
+	padding:10px;
+	color:black;
+	font-size: 20px;
+	font-weight: bold;
+	box-shadow:2px 2px 25px purple;
+	transition:all 0.3s ease-in;
+
+}
+
+
+
+
+/*comments*/
+.comments{
+	border:3px solid yellow;
+	background-color:black;
+	border-radius:20px;
+	border-width:5px;
+	padding-top:10px;
+	padding-left:40px;
+	padding-bottom:10px;
+}
+
+#cname{	
+	padding:5px;	
+}
+#cmail{
+	
+	padding:6px;
+}
+
+#inputtext{
+	width:50%;
+	background-color:black;
+	border-color:blue;
+	border-width:2pt;
+	border-radius:10px;
+	box-shadow:1px 1px 15px blue;
+	transition:all 0.3s ease-in;
+/*	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;*/
+}
+
+.fa-paper-plane{
+	padding-left:10px;
+	font-size:30px;
+	
+	text-shadow:0px 10px 15px #0088cc;
+}
+
+#send{
+	height: auto;
+	width: auto;
+	color:black;
+	font-size:130%;
+	font-weight:bold;
+	background-color:rgb(109,215,201);
+	border-radius:8px;
+	border-color: black;
+	border-width:2px;
+}
+#send:hover{
+
+	background-color:purple;
+	transition: 1.0s
+	
+}
+
+.contact{
+	background:black;/*url(./comment.jpg) no-repeat;*/
+}
+
+#email{
+	font-size:170%;
+	font-family: consolas;
+		
+}
+#address{
+	font-size: 150%;
+	color: white;
+	font-family: lucida calligraphy;
+}
+#pincode{
+	color: yellow;
+	font-size: 140%;
+	
+}
+
+#eimg{
+	border:3pt solid white;
+	border-radius:200px;
+	
+}
+.fa-envelope{
+	padding:7px;
+	color:#3e65cf;
+	font-size:40px;
+}
+
+.fab {
+  padding:5px;
+  font-size: 50px;
+  margin:  10px;  
+}
+.fa-linkedin {
+
+  border:2px solid blue;
+  background-color:white;
+  color:blue;
+  border-radius:20%;
+  
+}
+.fa-linkedin:hover {
+	border:2px solid black;
+	color:blue;
+	text-shadow:0 0 30px blue;
+  
+}
+
+.fa-github-square {
+	
+    border:2px solid black;
+	background-color:white;
+	color:black;
+	border-radius:20%;
+}
+.fa-github-square:hover {
+	border:2px solid black;
+	color:black;
+	text-shadow:0 0 30px black;
+  
+}
+.fa-hackerrank {
+	
+	border:2px solid green;
+	background-color:white;
+	color:#1cc125;
+	border-radius:15%;
+}
+.fa-hackerrank:hover{
+
+	color:#1cc125;
+	text-shadow:0 0 30px #1cc125;
+}
+#author{
+	text-align: center;
+	font-size: 19px;
+	color:white;
+	text-shadow: 0 5px 5px blue;
+}
