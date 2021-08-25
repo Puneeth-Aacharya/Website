@@ -17,6 +17,7 @@
 
 	<!--<link rel="stylesheet" href="./font-awesome.min.css">-->
 	<script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript" src="./sendmail.js"></script>
 	<link rel="stylesheet" href="./style.css">
 	
     <title>Puneeth Aacharya</title>
@@ -214,7 +215,14 @@
 								<h6 class="card-subtitle mb-2">Console Application developed using C++</h6>
 								<p class="card-text">This is a File structue mini project that can be used to handle the hospital related records.  </p>
 								<a href="https://github.com/Puneeth-Aacharya/HMS_FS_mini-project" class="card-link" style="font-weight:bold;color:blue;">View Project &nbsp;<i class="fa fa-external-link" style="color:black;"></i></a>
-
+						</div>
+					</div>
+					<div class="grid-child">
+						<div class="card" id="clg" >
+							<h4 class="card-title"><b style="color:black;text-shadow: 0 0 15px orange;">Simple College Admission Process</b></h4>
+								<h6 class="card-subtitle mb-2">Desktop Application using Java Swing and MySql</h6>
+								<p class="card-text"></p>
+								<a href="https://github.com/Puneeth-Aacharya/Collegge-Admission" class="card-link" style="font-weight:bold;color:blue;">View Project &nbsp;<i class="fa fa-external-link" style="color:black;"></i></a>
 						</div>
 					</div>
 				</div>
@@ -224,15 +232,15 @@
 	<section class="comments" id="comments">
 		<h3 style="color:white;"><i>Leave a Comment</i><i class="fa fa-paper-plane" ></i></h3></br>
 		
-			<form method="post" action="mailto:websiteksp.738@gmail.com" enctype="text/plain" >
+			<form method="post" name="form">
 				<fieldset>
 			
 					<label style="color:white;font-size:20px;"><i><b>Name :</b></i></label>
 					<input type="text" name="Name" id="cname" placeholder="enter your name" Required /><br/><br/>
 					<label style="color:white; font-size:20px;" ><i><b>Email :</b></i></label>&nbsp;
-					<input type="email" name="Email Address" id="cmail" placeholder="enter your email" Required /><br/></br>
+					<input type="email" name="Email Address" id="cmail" name="email" placeholder="enter your email" Required /><br/></br>
 					<textarea style="color:white;" id="inputtext" class="input" name="comments" rows="7" placeholder="write something...."></textarea><br/><br/>
-					<input type="submit" id="send" value="Submit"/><i class="fa fa-paper-plane" style="font-size: 20px;color: white;"></i>
+					<input type="button" value="Send" id="send" onclick="sendMail()" /><i class="fa fa-paper-plane" style="font-size: 20px;color: white;"></i>
 				<fieldset>
 			</form>
 	</section>
