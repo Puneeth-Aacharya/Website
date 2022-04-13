@@ -95,14 +95,14 @@
 
 #android.card,#dbms.card,#clg.card{
 	width:95%;
-	background-color: rgb(94, 219, 56);
+	background-color:rgb(220, 124, 236);
 	font-size: 100%;
 	box-shadow:2px 2px 20px purple;
 	padding-right: 1%;
 }
 #hms.card,#sgpa.card{
 	width:95%;
-	background-color:rgb(252, 209, 69);
+	background-color:wheat;
 	font-size: 100%;
 	box-shadow:2px 2px 10px purple;
 }
