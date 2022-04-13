@@ -114,7 +114,7 @@
 	padding-left:5%;
 }
 
-#inputtext.input{
+#message.input{
 	width: 90%;
 	background-color:black;
 	border-color:blue;
@@ -491,15 +491,18 @@ header{
 	padding-bottom:10px;
 }
 
-#cname{	
+#name{	
 	padding:5px;	
 }
-#cmail{
+#email{
 	
 	padding:6px;
 }
+#subject{
+	padding:6px;
+}
 
-#inputtext{
+#message{
 	width:50%;
 	background-color:black;
 	border-color:blue;
@@ -541,7 +544,7 @@ header{
 
 }
 
-#email{
+#email_c{
 	font-size:170%;
 	font-family: consolas;
 		
