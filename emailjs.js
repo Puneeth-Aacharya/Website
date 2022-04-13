@@ -25,12 +25,12 @@ function f(){
           // send the email here
           emailjs.sendForm(serviceID, templateID, this).then(
             (response) => {
-              console.log("SUCCESS!", response.status, response.text);
-              alert("SUCCESS!");
+              console.log("Email Sent Successfully ", response.status, response.text);
+              alert("Email Sent Successfully");
             },
             (error) => {
-              console.log("FAILED...", error);
-              alert("FAILED...", error);
+              console.log("FAILED...!!", error);
+              alert("FAILED...!!", error);
             }
           );
         });
