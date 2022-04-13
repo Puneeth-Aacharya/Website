@@ -17,7 +17,10 @@
 
 	<!--<link rel="stylesheet" href="./font-awesome.min.css">-->
 	<script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
-	<script type="text/javascript" src="./sendmail.js"></script>
+	<!--<script type="text/javascript" src="./sendmail.js"></script>-->
+	 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+	 <script type="text/javascript" src="./emailjs.js"></script>
 	<link rel="stylesheet" href="./style.css">
 	
     <title>Puneeth Aacharya</title>
@@ -233,17 +236,18 @@
 		<marquee style="color:red;font-size:20px;font-weight: bold;" scrollamount="15" >!!!---  Temporarily COMMENTS are disabled ----!!!</marquee>
 		<h3 style="color:white;"><i>Leave a Comment</i><i class="fa fa-paper-plane" ></i></h3></br>
 		
-			<form method="post" name="form">
-				<fieldset>
-			
-					<label style="color:white;font-size:20px;"><i><b>Name :</b></i></label>
-					<input type="text" name="Name" id="cname" placeholder="enter your name" Required /><br/><br/>
+			<form method="post" action="" enctype="text/plain" id="c_form">
+				<fieldset>			
+					<label style="color:white;font-size:20px;" id="cname"><i><b>Name :</b></i></label>
+					<input type="name" name="name" id="name" placeholder="enter your name" Required /><br/><br/>
+					<label style="color:white; font-size:20px;" ><i><b>Subject :</b></i></label>&nbsp;
+					<input type="text" name="subject" id="subject" placeholder="subject" Required /><br/></br>
 					<label style="color:white; font-size:20px;" ><i><b>Email :</b></i></label>&nbsp;
-					<input type="email" name="Email Address" id="cmail" name="email" placeholder="enter your email" Required /><br/></br>
-					<textarea style="color:white;" id="inputtext" class="input" name="comments" rows="7" placeholder="write something...."></textarea><br/><br/>
-					<input type="button" value="Send" id="send" onclick="sendMail()" /><i class="fa fa-paper-plane" style="font-size: 20px;color: white;"></i>
+					<input type="email" name="email" id="email" placeholder="enter your email" Required /><br/></br>
+					<textarea style="color:white;" id="message" name="message" placeholder="write something...." rows=6></textarea><br/><br/>
+					<button type="submit" onclick="f();">click here</button>
 				<fieldset>
-			</form>
+	</form>
 	</section>
 	
 <!-- Contact -->
